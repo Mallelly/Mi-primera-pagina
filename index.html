@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miprimera pagina</title>
+    <style>
+        body {
+            background-color:  lightblue;
+            font-family:  Arial;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>hola mundoo!!</h1>
+    <p>estoy aprendien fundamentos de programacion web</p>
+    <h2>Escribe tu nombre</h2>
+
+    <input type="text" id="nombreUsuario">
+    <button onclick="saludar()">Saludar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function saludar () {
+            let nombre = document.getElementById("nombreUsuario").value;
+            document.getElementById("resultado").innerHTML = "Hola" + nombre ", bienvenida a mi página";
+        }
+    </script>
+
+
+    <button onclick= "saludar()">Haz clic aquí</button>
+    <script>
+        function saludar() {
+            alert("¡Hola Bienvenido a JavaScript");
+        }
+    </script>
+    
+</body>
+</html>
